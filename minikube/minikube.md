@@ -25,6 +25,13 @@ sudo usermod -aG docker $USER
 sudo usermod -aG docker $USER
 # and then restart
 ```
+## Install Kubectl
+```bash
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+mkdir -p ~/.local/bin/kubectl
+sudo mv ./kubectl /usr/local/bin
+```
 ## Install Minikube 
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64

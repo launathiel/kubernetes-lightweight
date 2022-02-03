@@ -25,7 +25,6 @@ sudo systemctl start docker
 ```bash
 sudo groupadd docker
 sudo usermod -aG docker $USER
-sudo usermod -aG docker $USER
 # and then restart
 ```
 ---
